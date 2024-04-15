@@ -25,6 +25,7 @@ in {
     shfmt
     tree
     webex
+    stremio
   ];
 
   programs.home-manager.enable = true;
