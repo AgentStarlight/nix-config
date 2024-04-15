@@ -1,9 +1,9 @@
 {
-  username = "frost";
-  hostname = "UserWork";
+  username = "starlight";
+  hostname = "Person";
   system = "x86_64-linux";
   git = {
-    username = "Agentfrost";
-    email = "j.gaurav@proton.me";
+    username = "AgentStarlight";
+    email = "ankitha.reddy@protonmail.com";
   };
 }
