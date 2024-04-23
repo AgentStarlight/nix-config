@@ -85,6 +85,16 @@
         key = "<leader>wd";
         action = "<C-W>c";
       }
+      {
+        mode = "n";
+        key = "K";
+        action = "<cmd>lua vim.lsp.buf.hover()<CR>";
+      }
+      {
+        mode = "n";
+        key = "gd";
+        action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+      }
     ];
     plugins = {
       lualine.enable = true;
