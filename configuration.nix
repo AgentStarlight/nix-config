@@ -21,15 +21,19 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
+  # desktopManager
+  services.desktopManager = { plasma6.enable = true; };
+
+  # displayManager
+  services.displayManager = {
+    sddm.enable = true;
+    defaultSession = "plasma";
+  };
+
   # X Server
 
   services.xserver = {
     enable = true;
-    desktopManager = { plasma5.enable = true; };
-    displayManager = {
-      sddm.enable = true;
-      defaultSession = "plasma";
-    };
     libinput = {
       enable = true;
       touchpad.tapping = true;
@@ -41,7 +45,7 @@
   };
 
   # Exclude Packages
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
     plasma-browser-integration
     konsole
     oxygen
